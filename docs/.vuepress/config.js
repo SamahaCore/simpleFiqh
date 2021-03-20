@@ -3,8 +3,50 @@ module.exports = {
     description: "A reference for everyday fiqh",
     themeConfig: {
         logo: "/fiqh-temp-logo.png",
-        sidebar: [
-            '/'
-        ]
+        nav: [
+            {
+                text: 'Schools',
+                ariaLabel: 'madhabs',
+                items: [
+                    { text: 'Hanafi', link: '/hanafi/' },
+                    { text: 'Shafii', link: '/shafii/' }
+                ]
+            }
+
+        ],
+        sidebar: {
+            '/hanafi/': [
+                {
+                    title: 'Purification (Tahaara)',   // required
+                    //path: '/foo/',      // optional, link of the title, which should be an absolute path and must exist
+                    collapsable: false, // optional, defaults to true
+                    sidebarDepth: 1,    // optional, defaults to 1
+                    children: [
+                        '/hanafi/tahaara/wudhu',
+                        '/hanafi/tahaara/ghusl',
+                        '/hanafi/tahaara/tayammum',
+                        '/hanafi/tahaara/haydh',
+                        '/hanafi/tahaara/najasa',
+                        '/hanafi/tahaara/istinja',
+                    ]
+                }
+            ],
+            '/shafii/': [
+                {
+                    title: 'Purification (Tahaara)',   // required
+                    //path: '/foo/',      // optional, link of the title, which should be an absolute path and must exist
+                    collapsable: false, // optional, defaults to true
+                    sidebarDepth: 1,    // optional, defaults to 1
+                    children: [
+                        '/shafii/tahaara/wudhu',
+                        '/shafii/tahaara/ghusl',
+                        '/shafii/tahaara/tayammum',
+                        '/shafii/tahaara/haydh',
+                        '/shafii/tahaara/najasa',
+                        '/shafii/tahaara/istinja',
+                    ]
+                }
+            ]
+        }
     }
 }
