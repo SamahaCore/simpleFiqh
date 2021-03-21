@@ -1,7 +1,5 @@
 # Wudhu
 
-## General
-
 What is wudhu? It is ablution
 
 ## Fara'id
@@ -13,6 +11,3 @@ What is wudhu? It is ablution
 
 1. hands
 
-### smol
-
-#### even smaller

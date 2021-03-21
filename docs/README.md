@@ -3,6 +3,8 @@ home: true
 heroImage: /fiqh-temp-logo.png
 heroTitle: Simple Fiqh
 tagline: Your reference for everyday fiqh
+actionText: Start Reading
+actionLink: /intro.md
 features:
 - title: Simplicity First
   details: Includes rulings most people run into day-to-day
